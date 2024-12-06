@@ -109,15 +109,23 @@ const styles = StyleSheet.create({
     color: "#FDCB5A",
   },
   centerButtonContainer: {
-    position: "absolute",
-    top: -30,
-    alignSelf: "center",
+    // position: "absolute",
+    // top: -30,
+    // alignSelf: "center",
+    flex: 1, // Take up the whole screen
+    justifyContent: "center", // Center vertically
+    alignItems: "center", // Center horizontally
+    backgroundColor: "#ffffff",
+    bottom: 50,
+    borderRadius: 100,
+    width: 60,
+    height: 60,
   },
   centerButton: {
     width: 60,
     height: 60,
     backgroundColor: "#FDCB5A",
-    borderRadius: 30,
+    borderRadius: 100,
     justifyContent: "center",
     alignItems: "center",
     shadowColor: "#000",
