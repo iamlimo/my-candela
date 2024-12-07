@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 
-const Dashboard = () => {
+const Home = () => {
   return (
     <ScrollView style={styles.container}>
       {/* Header */}
@@ -83,14 +83,14 @@ const Dashboard = () => {
   );
 };
 
-interface StatsCardProps {
-  title: string;
-  value: string;
-  icon: string;
-  color: string;
-}
+// interface StatsCardProps {
+//   title: string;
+//   value: string;
+//   icon: string;
+//   color: string;
+// }
 
-const StatsCard: React.FC<StatsCardProps> = ({ title, value, icon, color }) => (
+const StatsCard = ({ title, value, icon, color }) => (
   <View style={[styles.statsCard, { backgroundColor: color + "20" }]}>
     <MaterialIcons name={icon} size={24} color={color} />
     <Text style={styles.statsValue}>{value}</Text>
@@ -161,4 +161,4 @@ const styles = StyleSheet.create({
   activityTime: { fontSize: 12, color: "#666", marginTop: 4 },
 });
 
-export default Dashboard;
+export default Home;

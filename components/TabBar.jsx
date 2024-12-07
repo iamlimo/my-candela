@@ -65,7 +65,7 @@ const getIconName = (routeName) => {
     case "index":
       return "home";
     case "project":
-      return "work";
+      return "business_center";
     case "createProjects":
       return "add";
     case "messages":
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
     // position: "absolute",
     // top: -30,
     // alignSelf: "center",
-     // Take up the whole screen
+    // Take up the whole screen
     justifyContent: "center", // Center vertically
     alignItems: "center", // Center horizontally
     backgroundColor: "#ffffff",
